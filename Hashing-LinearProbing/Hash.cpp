@@ -95,7 +95,7 @@ void Hash::SearchName(string Name)
 		cout << "Balance is:" << hashtable[HashFunction(Name)]->balance << endl;
 	}
 	else {
-		int index = 0;
+		int index = HashFunction(Name);
 		while (hashtable[index]->name != Name) {
 			index = LinearProbingFunction(index);
 			 if(index == HashFunction(Name)) {
