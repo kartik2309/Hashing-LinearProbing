@@ -14,7 +14,7 @@ int Hash::HashFunction(string Name)
 int Hash::LinearProbingFunction(int index)
 {
 	index++;
-	if (index >= SIZE) {
+	if (index >= SIZE - 1) {
 		index = 0;
 	}
 	return index;
